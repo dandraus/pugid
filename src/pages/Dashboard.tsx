@@ -15,6 +15,7 @@ export default function Dashboard() {
         return
       }
       setUser(data.user)
+      console.log(user)
       // Carga los perros de este usuario
       const { data: dogsData } = await supabase
         .from('dogs')
